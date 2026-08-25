@@ -4,7 +4,7 @@
 To apply least-privilege access on the `credit_risk` BigQuery dataset, restricting read/write access to only the roles that genuinely need it — the same principle applied to production data platforms (e.g., IAM least-privilege role design at EY, restricting encrypted PII access to only authorized principals).
 
 ## What was configured
-A `BigQuery Data Viewer` role was granted to the my account on the `credit_risk` dataset, intended to demonstrate read-only access provisioning for a hypothetical downstream consumer (e.g., a risk analyst who should be able to review governed data without modifying it).
+A `BigQuery Data Viewer` role was granted to the owner's account on the `credit_risk` dataset, intended to demonstrate read-only access provisioning for a hypothetical downstream consumer (e.g., a risk analyst who should be able to review governed data without modifying it).
 
 ## Finding: additive IAM makes this ineffective as configured
 On reviewing the resulting permissions panel, the same account already held `BigQuery Data Owner` access, inherited automatically from the Owner role at the project level (as the project creator). Google Cloud IAM permissions are **additive, not restrictive** — granting a lower-privilege role on top of an existing higher-privilege one does not downgrade or restrict access. The account's effective permissions remained full Owner-level access despite the added Viewer role.
