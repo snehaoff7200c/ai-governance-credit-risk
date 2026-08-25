@@ -3,11 +3,11 @@
 ## Overview
 | | |
 |---|---|
-| **Model name** | `credit-default-risk-model` (v1) |
+| **Model name** | `credit-default-risk-model` (v3 — `SAFE_CAST` type-corrected) |
 | **Model type** | Logistic Regression (BigQuery ML) |
 | **Registered in** | Vertex AI Model Registry (Gemini Enterprise Agent Platform → Models) |
 | **Owner / Steward** | Sneha Munipally |
-| **Date trained** | [today's date] |
+| **Version history** | v1 (baseline) → v2/v3 (`pay_5`/`pay_6` type mismatch corrected via `SAFE_CAST`) |
 | **Risk classification** | **High-Risk** — credit scoring / creditworthiness assessment falls under Annex III of the EU AI Act as a high-risk AI use case |
 
 ## Purpose and Intended Use
