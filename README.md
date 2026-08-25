@@ -40,7 +40,7 @@ flowchart LR
 
 ## Key findings
 
-**1. Accuracy hides more than it reveals.** The model scores 80% accuracy but only **27% recall** — meaning it misses roughly 3 out of 4 people who actually default. Full details in the model card.
+**1. Accuracy hides more than it reveals.** The model scores 80.6% accuracy but only **23% recall** — meaning it misses roughly 3 out of 4 people who actually default. Full details in the model card.
 
 **2. A real fairness disparity, found and quantified.** Group-wise evaluation by `sex` showed recall of 0.271 (male) vs 0.193 (female) — a ratio of 0.71, below the conventional four-fifths threshold used in disparate-impact analysis. Notably, accuracy and precision were both *higher* for the group with worse recall, which would have hidden this finding if accuracy were the only metric reviewed.
 
