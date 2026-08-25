@@ -18,6 +18,19 @@ flowchart LR
     B -.aspect tags: Protected Attribute.-> H[Fairness Evaluation]
     D --> H
 ```
+## Screenshots
+
+**Cataloged table with business glossary and fairness tags:**
+![Dataplex catalog view](Dataplex%20Catalog%20view.png)
+
+**Model Registry showing versioned iterations:**
+![Model Registry](Model%20Registry.png)
+
+**Fairness evaluation — recall by group:**
+![Fairness evaluation](Fairness%20evaluation.png)
+
+**Live prediction — real-time inference test:**
+![Live prediction](Live%20Prediction.png)
 
 ## What's in this repo
 | File | Contents |
